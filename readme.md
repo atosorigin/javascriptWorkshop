@@ -38,7 +38,7 @@ Don't forget to do a [pull request][6] when you have added value to the project.
 
 [1]: https://github.com/marcofranssen "Marco Franssen's Github profile"
 [2]: https://github.com/jansaris "Jan Saris's Github profile"
-[3]: https://github.com/svdvelde "Sander van de Velde's Github profile"
+[3]: https://github.com/sandervandevelde "Sander van de Velde's Github profile"
 [6]: http://github.com/guides/pull-requests "Pull request guide"
 [7]: https://github.com/atosorigin/javascriptWorkshop "Atos javascriptWorkshop Repository"
 [9]: http://www.atos.net/ "Atos Homepage"
