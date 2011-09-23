@@ -6,9 +6,8 @@ This javascript workshop is composed by [Marco Franssen][1], [Jan Saris][2] and 
 * [Jan Saris][2] - Founder
 * [Sander van de Velde][3] - Founder
 
-#How to fork
-1. ## Install Git<br />
-Install [Git Extensions][7]. This will provide you a good GUI to Git (easy for Git starters). 
+# Install Git<br />
+Install [Git Extensions][7]. This will provide you a good GUI to Git (easy for Git starters), includes GIT. 
 
 #SSH Key for github repo access<br />
 1. ## Generate a ssh key<br />
@@ -20,6 +19,7 @@ TODO: add manual text
 1. ## Paste public key on your github profile<br />
 TODO: add manual text
 
+#How to fork<br />
 1. ## Fork the `javascriptWorkshop` repo<br />
 Fork the javascriptWorkshop repo by clicking the Fork button on [https://github.com/atosorigin/javascriptWorkshop][5]<br />
 
