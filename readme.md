@@ -13,8 +13,10 @@ Install [Git Extensions][7]. This will provide you a good GUI to Git (easy for G
 #SSH Key for github repo access<br />
 1. ## Generate a ssh key<br />
 TODO: add manual text
+
 1. ## Save private key<br />
 TODO: add manual text
+
 1. ## Paste public key on your github profile<br />
 TODO: add manual text
 
