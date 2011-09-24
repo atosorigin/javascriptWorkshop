@@ -10,14 +10,16 @@ This javascript workshop is composed by [Marco Franssen][1], [Jan Saris][2] and 
 Install [Git Extensions][7]. This will provide you a good GUI to Git (easy for Git starters), includes GIT. 
 
 #SSH Key for github repo access<br />
+In order to connect to your github repository you need a SSH Key, so if you don't have one follow the following instructions.
 1. ## Generate a ssh key<br />
-TODO: add manual text
+Navigate to your directory where you did install GitExtensions. (Default: `C:\Program Files (x86)\GitExtensions`)
+Open the folder `PuTTY` and click the executable `puttygen.exe` and click the button `Generate`.
 
 1. ## Save private key<br />
-TODO: add manual text
+Optionally configure a password for your private key and then save the private key to a location on your harddrive. (For example: `c:\sshKeys\github.ppk`)
 
 1. ## Paste public key on your github profile<br />
-TODO: add manual text
+Optionally save your public key to your harddrive. Then navigate to [https://github.com/account/ssh][8] and click `add another public key`. Copy the public key from `puttygen.exe` and paste it in the key field and click `save`. (Title field not required)
 
 #How to fork<br />
 1. ## Fork the `javascriptWorkshop` repo<br />
@@ -53,3 +55,4 @@ Don't forget to do a [pull request][4] when you have added value to the project.
 [5]: https://github.com/atosorigin/javascriptWorkshop "Atos javascriptWorkshop Repository"
 [6]: http://www.atos.net/ "Atos Homepage"
 [7]: http://code.google.com/p/gitextensions/ "Git Extensions"
+[8]: https://github.com/account/ssh "Account Settings - SSH Public Keys"
