@@ -11,6 +11,7 @@ Install [Git Extensions][7]. This will provide you a good GUI to Git (easy for G
 
 #SSH Key for github repo access<br />
 In order to connect to your github repository you need a SSH Key, so if you don't have one follow the following instructions. <br />
+
 1. ## Generate a ssh key<br />
 Navigate to your directory where you did install GitExtensions. (Default: `C:\Program Files (x86)\GitExtensions`) <br />
 Open the folder `PuTTY` and click the executable `puttygen.exe` and click the button `Generate`.
