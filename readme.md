@@ -20,7 +20,7 @@ Open the folder `PuTTY` and click the executable `puttygen.exe` and click the bu
 Optionally configure a password for your private key and then save the private key to a location on your harddrive. (For example: `c:\sshKeys\github.ppk`)
 
 1. ## Paste public key on your github profile<br />
-Optionally save your public key to your harddrive. Then navigate to [https://github.com/account/ssh][8] and click `add another public key`. Copy the public key from `puttygen.exe` and paste it in the key field and click `save`. (Title field not required)
+Optionally save your public key to your harddrive. Then navigate to [https://github.com/account/ssh][8] and click `add another public key`. Copy the public key from `puttygen.exe` and paste it in the `Key` input-field and click `save`. (Title field not required)
 
 #How to fork<br />
 1. ## Fork the `javascriptWorkshop` repo<br />
