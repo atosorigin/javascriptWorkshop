@@ -78,6 +78,7 @@
     <Compile Include="Areas\KnockoutJS\Controllers\SimpleBindingsController.cs" />
     <Compile Include="Areas\KnockoutJS\Controllers\TocController.cs" />
     <Compile Include="Areas\KnockoutJS\KnockoutJSAreaRegistration.cs" />
+    <Compile Include="Areas\KnockoutJS\Models\StateModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -194,7 +195,6 @@
     <Folder Include="Areas\BasicJavascript\Views\Shared\" />
     <Folder Include="Areas\JQueryUI\Models\" />
     <Folder Include="Areas\JQueryUI\Views\Shared\" />
-    <Folder Include="Areas\KnockoutJS\Models\" />
     <Folder Include="Areas\KnockoutJS\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
@@ -276,7 +276,7 @@
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
+          <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>56502</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
