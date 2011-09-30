@@ -1,0 +1,21 @@
+﻿@section Head
+{
+    <link href="@Url.Content("~/Content/themes/base/jquery.ui.all.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.8.16.min.js")" type="text/javascript"></script>
+
+    <script src="@Url.Content("~/Scripts/workshopScripts/jQueryUI.js")" type="text/javascript"></script>
+}
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>JQuery UI</h2>
+<input id="openDialogButton" type="button" value="Open dialog"/>
+
+<div id="myDialog">
+    <input type="text" id="myDate" />
+</div>
+<div id="dialogState">
+</div>

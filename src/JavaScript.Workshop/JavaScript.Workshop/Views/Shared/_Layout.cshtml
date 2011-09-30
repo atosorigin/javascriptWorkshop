@@ -6,7 +6,7 @@
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Scripts/jquery-1.6.4.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/modernizr-2.0.6-development-only.js")" type="text/javascript"></script>
-    @RenderSection("Scripts", false)
+    @RenderSection("Head", false)
 </head>
 <body>
     <div class="page">
@@ -22,7 +22,7 @@
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("Basic JavaScript", "Index", "Toc", new { area = "BasicJavaScript" }, null)</li>
                     <li>@Html.ActionLink("Ajax", "Index", "Toc", new { area = "Ajax" }, null)</li>
-                    <li>@Html.ActionLink("JQuery UI", "Index", "Toc", new { area = "JQueryUI" }, null)</li>
+                    <li>@Html.ActionLink("JQuery UI", "Index", "UI", new { area = "JQueryUI" }, null)</li>
                     <li>@Html.ActionLink("Advanced JavaScript", "Index", "Toc", new { area = "AdvancedJavascript" }, null)</li>
                     <li>@Html.ActionLink("Knockout JS", "Index", "Toc", new { area = "KnockoutJS" }, null)</li>
                     <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, null)</li>

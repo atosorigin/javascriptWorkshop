@@ -70,7 +70,7 @@
     <Compile Include="Areas\Ajax\Controllers\TocController.cs" />
     <Compile Include="Areas\BasicJavascript\BasicJavascriptAreaRegistration.cs" />
     <Compile Include="Areas\BasicJavascript\Controllers\TocController.cs" />
-    <Compile Include="Areas\JQueryUI\Controllers\TocController.cs" />
+    <Compile Include="Areas\JQueryUI\Controllers\UIController.cs" />
     <Compile Include="Areas\JQueryUI\JQueryUIAreaRegistration.cs" />
     <Compile Include="Areas\KnockoutJS\Controllers\AdvancedBindingsController.cs" />
     <Compile Include="Areas\KnockoutJS\Controllers\AnimationsController.cs" />
@@ -155,6 +155,7 @@
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\workshopScripts\jQueryUI.js" />
     <Content Include="Scripts\knockout-1.3.0beta.debug.js" />
     <Content Include="Scripts\knockout-1.3.0beta.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
@@ -237,9 +238,6 @@
     <Content Include="Areas\KnockoutJS\Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\JQueryUI\Views\Toc\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Areas\BasicJavascript\Views\Toc\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -262,6 +260,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\AdvancedJavascript\Views\Objects\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\JQueryUI\Views\UI\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
