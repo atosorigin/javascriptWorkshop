@@ -36,9 +36,9 @@
         });
         viewModel.result = ko.dependentObservable(function () {
             var result = '';
-            result += this.country() != undefined ? this.country().text + ' ' : '';
-            result += this.state() != undefined ? this.state().text + ' ' : '';
-            result += this.city() != undefined ? this.city().text + ' ' : '';
+            result += this.country() != undefined ? 'Country: ' + this.country().text + ', ' : '';
+            result += this.state() != undefined ? 'State: ' + this.state().text + ', ' : '';
+            result += this.city() != undefined ? 'City: ' + this.city().text : '';
             return result;
         }, viewModel);
 
