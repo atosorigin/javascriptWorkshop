@@ -24,14 +24,14 @@ namespace JavaScript.Workshop.Areas.KnockoutJS.Controllers
             return new JsonResult {Data = countries, JsonRequestBehavior = JsonRequestBehavior.AllowGet};
         }
 
-        [GET("States/{country}")]
+        [GET("CascadingDropdown/States/{country}")]
         public JsonResult States(string country)
         {
             var states = GetStates().Where(s => s.country == country);
             return new JsonResult {Data = states, JsonRequestBehavior = JsonRequestBehavior.AllowGet};
         }
 
-        [GET("Cities/{state}")]
+        [GET("CascadingDropdown/Cities/{state}")]
         public JsonResult Cities(string state)
         {
             var states = GetCities().Where(s => s.state == state);
