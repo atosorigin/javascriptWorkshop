@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AttributeRouting">
+      <HintPath>..\packages\AttributeRouting.1.1\lib\net40\AttributeRouting.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.4.1.10715.0\lib\EntityFramework.dll</HintPath>
     </Reference>
@@ -60,8 +63,12 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.0.0.0\lib\WebActivator.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AttributeRouting.cs" />
     <Compile Include="Areas\AdvancedJavascript\AdvancedJavascriptAreaRegistration.cs" />
     <Compile Include="Areas\AdvancedJavascript\Controllers\EventingController.cs" />
     <Compile Include="Areas\AdvancedJavascript\Controllers\ObjectsController.cs" />
@@ -78,8 +85,6 @@
     <Compile Include="Areas\KnockoutJS\Controllers\SimpleBindingsController.cs" />
     <Compile Include="Areas\KnockoutJS\Controllers\TocController.cs" />
     <Compile Include="Areas\KnockoutJS\KnockoutJSAreaRegistration.cs" />
-    <Compile Include="Areas\KnockoutJS\Models\CityModel.cs" />
-    <Compile Include="Areas\KnockoutJS\Models\StateModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -199,6 +204,7 @@
     <Folder Include="Areas\BasicJavascript\Views\Shared\" />
     <Folder Include="Areas\JQueryUI\Models\" />
     <Folder Include="Areas\JQueryUI\Views\Shared\" />
+    <Folder Include="Areas\KnockoutJS\Models\" />
     <Folder Include="Areas\KnockoutJS\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
