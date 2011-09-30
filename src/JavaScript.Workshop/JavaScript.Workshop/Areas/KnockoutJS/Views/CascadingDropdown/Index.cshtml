@@ -7,7 +7,7 @@
     <script>
         var viewModel = {
             country: ko.observable(),
-            countries: ko.observableArray([{ value: 'nl', text: 'Netherlands' }, { value: 'de', text: 'Germany' }, { value: 'us', text: 'United states'}]),
+            countries: ko.observableArray(),
             state: ko.observable(),
             states: ko.observableArray(),
             city: ko.observable(),
@@ -35,9 +35,11 @@
             owner: viewModel
         });
         viewModel.result = ko.dependentObservable(function () {
-            return this.country != undefined ? this.country.text + ' ' : '' +
-                    this.state != undefined ? this.state.text + ' ' : '' +
-                    this.city != undefined ? this.city.text + ' ' : '';
+            var result = '';
+            result += this.country() != undefined ? this.country().text + ' ' : '';
+            result += this.state() != undefined ? this.state().text + ' ' : '';
+            result += this.city() != undefined ? this.city().text + ' ' : '';
+            return result;
         }, viewModel);
 
         $(function () {
