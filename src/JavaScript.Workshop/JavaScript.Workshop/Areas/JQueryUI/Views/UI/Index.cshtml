@@ -1,9 +1,10 @@
 ﻿@section Head
 {
+<!--
     <link href="@Url.Content("~/Content/themes/base/jquery.ui.all.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Scripts/jquery-ui-1.8.16.min.js")" type="text/javascript"></script>
-
     <script src="@Url.Content("~/Scripts/workshopScripts/jQueryUI.js")" type="text/javascript"></script>
+-->
 }
 
 @{
@@ -12,7 +13,9 @@
 }
 
 <h2>JQuery UI</h2>
-<input id="openDialogButton" type="button" value="Open dialog"/>
+
+<div class="clear"></div>
+<button id="openDialogButton" type="button">Open dialog</button>
 
 <div id="myDialog">
     <input type="text" id="myDate" />

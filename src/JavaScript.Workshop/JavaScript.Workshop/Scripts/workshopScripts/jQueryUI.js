@@ -13,22 +13,5 @@ $(function () {
 //$(ExecuteOnStartup);
 
 function ExecuteOnStartup() {
-    var config = {
-        autoOpen: false,
-        resizable: false,
-        draggable: true,
-        modal: true,
-        height: 500,
-        title: 'My dialog title',
-        buttons: { Ok: function () { $(this).dialog("close"); } },
-        open: function () { $('#dialogState').html('Dialog opened'); },
-        close: function () { $('#dialogState').html('Dialog closed'); },
-        dragStart: function () { $('#dialogState').html('Dialog drag started'); },
-        dragStop: function () { $('#dialogState').html('Dialog drag stopped'); }
-    };
 
-    $('#myDialog').dialog(config);
-    $('#openDialogButton').click(function () { $('#myDialog').dialog('open'); });
-
-    $('#myDate').datepicker({ firstDay: 1, dateFormat: 'dd-mm-yy' });
 }
