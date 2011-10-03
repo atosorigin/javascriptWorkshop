@@ -15,3 +15,18 @@ $(function () {
 function ExecuteOnStartup() {
 
 }
+
+function animateDiv() {
+    var selectedEffect = '';
+    var config = { };
+    var checkedButton = $(':checked', '#radio');
+
+    switch (checkedButton[0].id) {
+        case 'radio1': selectedEffect = 'fade'; break;
+        case 'radio2': selectedEffect = 'bounce'; break;
+        case 'radio3': selectedEffect = 'explode'; break;
+    }
+
+
+    $("#animationDiv").effect(selectedEffect, config, 500);
+}
