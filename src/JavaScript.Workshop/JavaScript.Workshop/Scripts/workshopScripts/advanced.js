@@ -18,7 +18,7 @@ function ExecuteOnStart() {
 function Person() {
     var self = this;
     var firstName = 'Bill';
-    var lastName = 'Gates';
+    var lastName = last;
     this.MyName = firstName + ' ' + lastName;
 
     var fullName = function () {
@@ -26,15 +26,18 @@ function Person() {
         return self.MyName;
     };
 
-    this.ChangeLastName = function (newLastName) {
+    var changeLastName = function (newLastName) {
         lastName = newLastName;
-        this.MyName = fullName();
+        self.MyName = fullName();
     };
 
     this.Shout = function (word) {
         $(self).trigger('shout', word);
     };
 
+    return {
+        ChangeLastName: changeLastName
+    };
 };
 
 function Dog() {

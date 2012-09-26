@@ -85,6 +85,7 @@
     <Compile Include="Areas\KnockoutJS\Controllers\SimpleBindingsController.cs" />
     <Compile Include="Areas\KnockoutJS\Controllers\TocController.cs" />
     <Compile Include="Areas\KnockoutJS\KnockoutJSAreaRegistration.cs" />
+    <Compile Include="Areas\KnockoutJS\Models\HomeEditViewModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -165,6 +166,7 @@
     <Content Include="Scripts\knockout-1.3.0beta.debug.js" />
     <Content Include="Scripts\knockout-1.3.0beta.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
+    <Content Include="Scripts\workshopScripts\simpleKnockout.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -205,7 +207,6 @@
     <Folder Include="Areas\BasicJavascript\Views\Shared\" />
     <Folder Include="Areas\JQueryUI\Models\" />
     <Folder Include="Areas\JQueryUI\Views\Shared\" />
-    <Folder Include="Areas\KnockoutJS\Models\" />
     <Folder Include="Areas\KnockoutJS\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>

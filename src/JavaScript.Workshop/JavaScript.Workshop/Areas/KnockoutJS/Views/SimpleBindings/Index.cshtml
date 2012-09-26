@@ -1,5 +1,44 @@
-﻿@{
-    ViewBag.Title = "Simple Bindings - Knockout JS";
+﻿@model JavaScript.Workshop.Areas.KnockoutJS.Models.KnockoutEditViewModel
+@{
+ ViewBag.Title = "Demo of MVC edit view combined with KnockoutJs (MVVM implemention)";
+}
+@section Scripts{
+ <script src="@Url.Content("~/Scripts/knockout.edit.js")"
+         type="text/javascript"></script>
+ <script type="text/javascript">
+     <script type="text/javascript">
+    var serverViewModel = @Html.Raw(Json.Encode(Model));
+ </script>
+
+ </script>
 }
 
-<h2>Simple Bindings - Knockout JS</h2>
+<h2>MVC edit view combined with KnockoutJs (MVVM implemention)</h2>
+
+@using (Html.BeginForm()) {
+  @Html.ValidationSummary(true)
+  <fieldset>
+  <legend>KnockoutJS</legend>
+  @Html.HiddenFor(model => model.Id)
+  @Html.LabelFor(model => model.FamilyName)
+  @Html.TextBoxFor(model => model.FamilyName)
+  <label>@Html.CheckBoxFor(model => model.IsScary)Is scary</label>
+  <hr/>
+  @Html.LabelFor(model => model.Address.Number)
+  @Html.TextBoxFor(model => model.Address.Number)
+  <br/>
+  @Html.LabelFor(model => model.Address.Street)
+  @Html.TextBoxFor(model =>
+    model.Address.Street)
+  <p>
+  <input type="submit" value="Save" />
+  </p>
+  </fieldset>
+}
+
+<div id="didYouKnow">   
+  Did you know? Addams's original cartoons were one-panel gags.
+  <br/>
+  The characters were undeveloped and unnamed until later versions.
+</div>
+
